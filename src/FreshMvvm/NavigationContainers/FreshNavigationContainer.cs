@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Threading.Tasks;
+using FormsPlugin.Iconize;
 using Xamarin.Forms;
+using Plugin.Iconize;
 
 namespace FreshMvvm
 {
-    public class FreshNavigationContainer : Xamarin.Forms.NavigationPage, IFreshNavigationService
+    public class FreshNavigationContainer : IconNavigationPage, IFreshNavigationService
     {
         public FreshNavigationContainer (Page page) 
             : this (page, Constants.DefaultNavigationServiceName)
@@ -35,7 +37,7 @@ namespace FreshMvvm
 
         protected virtual Page CreateContainerPage (Page page)
         {
-            return new NavigationPage (page);
+            return new IconNavigationPage (page);
         }
 
 		public virtual Task PushPage (Xamarin.Forms.Page page, FreshBasePageModel model, bool modal = false, bool animate = true)
