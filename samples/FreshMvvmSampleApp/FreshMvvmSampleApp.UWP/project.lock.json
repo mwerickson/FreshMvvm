@@ -15844,12 +15844,12 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "D:\\dev\\repositories\\FreshMvvm\\samples\\FreshMvvmSampleApp\\FreshMvvmSampleApp.UWP\\FreshMvvmSampleApp.UWP.csproj",
+      "projectUniqueName": "F:\\dev\\repositories\\FreshMvvm\\samples\\FreshMvvmSampleApp\\FreshMvvmSampleApp.UWP\\FreshMvvmSampleApp.UWP.csproj",
       "projectName": "FreshMvvmSampleApp.UWP",
-      "projectPath": "D:\\dev\\repositories\\FreshMvvm\\samples\\FreshMvvmSampleApp\\FreshMvvmSampleApp.UWP\\FreshMvvmSampleApp.UWP.csproj",
-      "projectJsonPath": "D:\\dev\\repositories\\FreshMvvm\\samples\\FreshMvvmSampleApp\\FreshMvvmSampleApp.UWP\\project.json",
+      "projectPath": "F:\\dev\\repositories\\FreshMvvm\\samples\\FreshMvvmSampleApp\\FreshMvvmSampleApp.UWP\\FreshMvvmSampleApp.UWP.csproj",
+      "projectJsonPath": "F:\\dev\\repositories\\FreshMvvm\\samples\\FreshMvvmSampleApp\\FreshMvvmSampleApp.UWP\\project.json",
       "packagesPath": "C:\\Users\\merickson\\.nuget\\packages\\",
-      "outputPath": "D:\\dev\\repositories\\FreshMvvm\\samples\\FreshMvvmSampleApp\\FreshMvvmSampleApp.UWP\\obj\\",
+      "outputPath": "F:\\dev\\repositories\\FreshMvvm\\samples\\FreshMvvmSampleApp\\FreshMvvmSampleApp.UWP\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
         "C:\\Users\\merickson\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -15857,17 +15857,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "F:\\dev\\NuGetSource": {},
         "http://nuget.grapecity.com/nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "uap10.0.10240": {
           "projectReferences": {
-            "D:\\dev\\repositories\\FreshMvvm\\samples\\FreshMvvmSampleApp\\FreshMvvmSampleApp\\FreshMvvmSampleApp.csproj": {
-              "projectPath": "D:\\dev\\repositories\\FreshMvvm\\samples\\FreshMvvmSampleApp\\FreshMvvmSampleApp\\FreshMvvmSampleApp.csproj"
+            "F:\\dev\\repositories\\FreshMvvm\\samples\\FreshMvvmSampleApp\\FreshMvvmSampleApp\\FreshMvvmSampleApp.csproj": {
+              "projectPath": "F:\\dev\\repositories\\FreshMvvm\\samples\\FreshMvvmSampleApp\\FreshMvvmSampleApp\\FreshMvvmSampleApp.csproj"
             },
-            "D:\\dev\\repositories\\FreshMvvm\\src\\FreshMvvm\\FreshMvvm.csproj": {
-              "projectPath": "D:\\dev\\repositories\\FreshMvvm\\src\\FreshMvvm\\FreshMvvm.csproj"
+            "F:\\dev\\repositories\\FreshMvvm\\src\\FreshMvvm\\FreshMvvm.csproj": {
+              "projectPath": "F:\\dev\\repositories\\FreshMvvm\\src\\FreshMvvm\\FreshMvvm.csproj"
             }
           }
         }
