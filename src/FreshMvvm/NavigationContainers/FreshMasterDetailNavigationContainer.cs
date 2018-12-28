@@ -4,6 +4,7 @@ using Xamarin.Forms;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using FormsPlugin.Iconize;
 
 namespace FreshMvvm
 {
@@ -13,7 +14,7 @@ namespace FreshMvvm
         Dictionary<string, Page> _pages = new Dictionary<string, Page> ();
         ContentPage _menuPage;
         ObservableCollection<string> _pageNames = new ObservableCollection<string> ();
-	ListView _listView = new ListView ();
+	    ListView _listView = new ListView ();
 
         public Dictionary<string, Page> Pages { get { return _pages; } }
         protected ObservableCollection<string> PageNames { get { return _pageNames; } }
@@ -73,7 +74,7 @@ namespace FreshMvvm
 
         protected virtual Page CreateContainerPage (Page page)
         {
-            return new NavigationPage (page);
+            return new IconNavigationPage (page);
         }
 
         protected virtual void CreateMenuPage (string menuPageTitle, string menuIcon = null)
@@ -105,19 +106,19 @@ namespace FreshMvvm
         {
             if (modal)
                 return Navigation.PushModalAsync (CreateContainerPageSafe(page));
-            return (Detail as NavigationPage).PushAsync (page, animate); //TODO: make this better
+            return (Detail as IconNavigationPage).PushAsync (page, animate); //TODO: make this better
 		}
 
 		public Task PopPage (bool modal = false, bool animate = true)
 		{
             if (modal)
                 return Navigation.PopModalAsync (animate);
-            return (Detail as NavigationPage).PopAsync (animate); //TODO: make this better            
+            return (Detail as IconNavigationPage).PopAsync (animate); //TODO: make this better            
 		}
 
         public Task PopToRoot (bool animate = true)
         {
-            return (Detail as NavigationPage).PopToRootAsync (animate);
+            return (Detail as IconNavigationPage).PopToRootAsync (animate);
         }
 
         public string NavigationServiceName { get; private set; }

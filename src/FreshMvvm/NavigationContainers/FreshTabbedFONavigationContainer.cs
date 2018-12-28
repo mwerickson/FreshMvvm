@@ -3,13 +3,14 @@ using Xamarin.Forms;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Linq;
+using FormsPlugin.Iconize;
 
 namespace FreshMvvm
 {
     /// <summary>
     /// This Tabbed navigation container for when you only want the tabs to appear on the first page and then push to a second page without tabs
     /// </summary>
-    public class FreshTabbedFONavigationContainer : NavigationPage, IFreshNavigationService
+    public class FreshTabbedFONavigationContainer : IconNavigationPage, IFreshNavigationService
     {
         TabbedPage _innerTabbedPage;
         public TabbedPage FirstTabbedPage { get { return _innerTabbedPage; } }
